@@ -56,6 +56,18 @@ button {
 .popup-modal.show {
   opacity: 100%;
   pointer-events: all;
+  animation-name: animate;
+  animation-duration: .3s;
+}
+
+@keyframes animate {
+  from {
+    transform: translate(-50%, -100%);
+    opacity: 0%;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 100%;}
 }
 
 .backdrop.show {
